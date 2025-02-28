@@ -24,7 +24,7 @@
             class="rounded-full bg-slate-300 px-4 py-2 flex items-center gap-2"
           >
             <img src="./assets/checkbox.png" alt="" />
-            <p class="font-extrabold">23</p>
+            <p id="task-totally-completed" class="font-extrabold">23</p>
           </button>
           <button class="rounded-full">
             <img src="./assets/theme-btn.png" alt="" />
@@ -43,12 +43,12 @@
               />
               <div class="">
                 <p class="text-xs font-bold text-slate-500">Task Assigned</p>
-                <p class="font-bold text-xl">6</p>
+                <p id="num-of-tasks" class="font-bold text-xl">X</p>
               </div>
             </div>
             <div id="discover" class="flex grow items-center justify-center shadow-md text-white font-semibold gap-5  bg-gradient-to-r from-cyan-500 to-blue-500 rounded-2xl">
               <img src="./assets/board.png" alt="" />
-              <p>Discover Something <br />New Today!</p>
+              <p>Discover Something New Today!</p>
             </div>
             <div class="flex items-center gap-2 bg-slate-200 p-8 rounded-2xl shadow-md">
               <img class="h-10 rounded-2xl bg-slate-50 p-2" src="./assets/calender.png" alt="" />
@@ -58,77 +58,77 @@
               </div>
             </div>
           </article>
-          <article class="cards grid grid-cols-3 gap-8">
-            <div class="card">
-                <p class="text-sm rounded-sm bg-slate-50">ShopEase</p>
-                <p class="title">Fix Mobile Button Issu</p>
-                <p>Debug suing chrome DevTools,check for overlapping</p>
-                <div class="flex items-center gap-6">
+          <article class="cards grid grid-cols-3 gap-8 px-4">
+            <div class="card bg-cyan-100 rounded-md p-5">
+                <p class="text-sm rounded bg-slate-200 w-20 text-center py-2 my-2">ShopEase</p>
+                <p class="title">Fix Mobile Button Issue</p>
+                <p class="bg-slate-50 p-2 rounded-md text-sm my-2">Debug using chrome DevTools,check for overlapping</p>
+                <div class="flex items-center gap-6 justify-between my-4">
                     <div>
-                        <p>Deadline</p>
+                        <p class="text-xs">Deadline</p>
                         <p>21 March 2025</p>
                     </div>
-                    <button class="btn btn-primary">Completed</button>
+                    <button class="btn btn-primary completed">Completed</button>
                 </div>
             </div>
-            <div class="card">
-                <p class="text-sm rounded-sm bg-slate-50">ShopEase</p>
-                <p class="title">Fix Mobile Button Issu</p>
-                <p>Debug suing chrome DevTools,check for overlapping</p>
-                <div class="flex items-center gap-6">
+            <div class="card bg-cyan-100 rounded-md p-5">
+                <p class="text-sm rounded bg-slate-200 w-20 text-center py-2 my-2">CloudSync</p>
+                <p class="title">Add Dark Mode</p>
+                <p class="bg-slate-50 p-2 rounded-md text-sm my-2">Debug using chrome DevTools,check for overlapping</p>
+                <div class="flex items-center gap-6 justify-between my-4">
                     <div>
-                        <p>Deadline</p>
+                        <p class="text-xs">Deadline</p>
                         <p>21 March 2025</p>
                     </div>
-                    <button class="btn btn-primary">Completed</button>
+                    <button class="btn btn-primary completed">Completed</button>
                 </div>
             </div>
-            <div class="card">
-                <p class="text-sm rounded-sm bg-slate-50">ShopEase</p>
-                <p class="title">Fix Mobile Button Issu</p>
-                <p>Debug suing chrome DevTools,check for overlapping</p>
-                <div class="flex items-center gap-6">
+            <div class="card bg-cyan-100 rounded-md p-5">
+                <p class="text-sm rounded bg-slate-200 w-20 text-center py-2 my-2">SwiftPay</p>
+                <p class="title">Optimize Home Page</p>
+                <p class="bg-slate-50 p-2 rounded-md text-sm my-2">Debug using chrome DevTools,check for overlapping</p>
+                <div class="flex items-center gap-6 justify-between my-4">
                     <div>
-                        <p>Deadline</p>
+                        <p class="text-xs">Deadline</p>
                         <p>21 March 2025</p>
                     </div>
-                    <button class="btn btn-primary">Completed</button>
+                    <button class="btn btn-primary completed">Completed</button>
                 </div>
             </div>
-            <div class="card">
-                <p class="text-sm rounded-sm bg-slate-50">ShopEase</p>
-                <p class="title">Fix Mobile Button Issu</p>
-                <p>Debug suing chrome DevTools,check for overlapping</p>
-                <div class="flex items-center gap-6">
+            <div class="card bg-cyan-100 rounded-md p-5">
+                <p class="text-sm rounded bg-slate-200 w-20 text-center py-2 my-2">Meta</p>
+                <p class="title">Add New Emoji</p>
+                <p class="bg-slate-50 p-2 rounded-md text-sm my-2">Debug using chrome DevTools,check for overlapping</p>
+                <div class="flex items-center gap-6 justify-between my-4">
                     <div>
-                        <p>Deadline</p>
+                        <p class="text-xs">Deadline</p>
                         <p>21 March 2025</p>
                     </div>
-                    <button class="btn btn-primary">Completed</button>
+                    <button class="btn btn-primary completed">Completed</button>
                 </div>
             </div>
-            <div class="card">
-                <p class="text-sm rounded-sm bg-slate-50">ShopEase</p>
-                <p class="title">Fix Mobile Button Issu</p>
-                <p>Debug suing chrome DevTools,check for overlapping</p>
-                <div class="flex items-center gap-6">
+            <div class="card bg-cyan-100 rounded-md p-5">
+                <p class="text-sm rounded bg-slate-200 w-20 text-center py-2 my-2">GoogleLLC</p>
+                <p class="title">Integrate OpenAI API</p>
+                <p class="bg-slate-50 p-2 rounded-md text-sm my-2">Debug using chrome DevTools,check for overlapping</p>
+                <div class="flex items-center gap-6 justify-between my-4">
                     <div>
-                        <p>Deadline</p>
+                        <p class="text-xs">Deadline</p>
                         <p>21 March 2025</p>
                     </div>
-                    <button class="btn btn-primary">Completed</button>
+                    <button class="btn btn-primary completed">Completed</button>
                 </div>
             </div>
-            <div class="card">
-                <p class="text-sm rounded-sm bg-slate-50">ShopEase</p>
-                <p class="title">Fix Mobile Button Issu</p>
-                <p>Debug suing chrome DevTools,check for overlapping</p>
-                <div class="flex items-center gap-6">
+            <div class="card bg-cyan-100 rounded-md p-5">
+                <p class="text-sm rounded bg-slate-200 w-20 text-center py-2 my-2">Glassdoor</p>
+                <p class="title">Improve Job Searching</p>
+                <p class="bg-slate-50 p-2 rounded-md text-sm my-2">Debug using chrome DevTools,check for overlapping</p>
+                <div class="flex items-center gap-6 justify-between my-4">
                     <div>
-                        <p>Deadline</p>
+                        <p class="text-xs">Deadline</p>
                         <p>21 March 2025</p>
                     </div>
-                    <button class="btn btn-primary">Completed</button>
+                    <button class="btn btn-primary completed">Completed</button>
                 </div>
             </div>
           </article>
