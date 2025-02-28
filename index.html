@@ -13,22 +13,130 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="">
-    <header  class="bg-slate-200 rounded-xl mx-4 py-2">
+    <header class="bg-slate-200 rounded-xl mx-4 py-2 shadow-md">
       <nav class="flex items-center justify-between mx-4">
         <div class="flex items-center">
           <img src="./assets/logo.png" alt="" />
           <h1 class="text-2xl font-bold">DevBoard</h1>
         </div>
         <div class="flex items-center gap-10">
-            <button class="rounded-full bg-slate-300 px-4 py-2 flex items-center gap-2">
-                <img src="./assets/checkbox.png" alt="">
-                <p class="font-extrabold ">23</p>
-            </button>
-            <button class="rounded-full">
-                <img src="./assets/theme-btn.png" alt="">
-            </button>
+          <button
+            class="rounded-full bg-slate-300 px-4 py-2 flex items-center gap-2"
+          >
+            <img src="./assets/checkbox.png" alt="" />
+            <p class="font-extrabold">23</p>
+          </button>
+          <button class="rounded-full">
+            <img src="./assets/theme-btn.png" alt="" />
+          </button>
         </div>
       </nav>
     </header>
+    <main class="flex items-baseline">
+      <section>
+        <article class="flex py-4 px-4 gap-6">
+            <div id="task-assigned" class="flex gap-2 bg-slate-200 p-8 rounded-2xl shadow-md">
+              <img
+                class="w-12 rounded-full p-2 bg-slate-50"
+                src="./assets/checkbox.png"
+                alt=""
+              />
+              <div class="">
+                <p class="text-xs font-bold text-slate-500">Task Assigned</p>
+                <p class="font-bold text-xl">6</p>
+              </div>
+            </div>
+            <div id="discover" class="flex grow items-center justify-center shadow-md text-white font-semibold gap-5  bg-gradient-to-r from-cyan-500 to-blue-500 rounded-2xl">
+              <img src="./assets/board.png" alt="" />
+              <p>Discover Something <br />New Today!</p>
+            </div>
+            <div class="flex items-center gap-2 bg-slate-200 p-8 rounded-2xl shadow-md">
+              <img class="h-10 rounded-2xl bg-slate-50 p-2" src="./assets/calender.png" alt="" />
+              <div>
+                <span class="font-semibold" id="to-day">XXX</span>,
+                <p id="to-date" class="font-bold">XXX XX XXXX</p>
+              </div>
+            </div>
+          </article>
+          <article class="cards grid grid-cols-3 gap-8">
+            <div class="card">
+                <p class="text-sm rounded-sm bg-slate-50">ShopEase</p>
+                <p class="title">Fix Mobile Button Issu</p>
+                <p>Debug suing chrome DevTools,check for overlapping</p>
+                <div class="flex items-center gap-6">
+                    <div>
+                        <p>Deadline</p>
+                        <p>21 March 2025</p>
+                    </div>
+                    <button class="btn btn-primary">Completed</button>
+                </div>
+            </div>
+            <div class="card">
+                <p class="text-sm rounded-sm bg-slate-50">ShopEase</p>
+                <p class="title">Fix Mobile Button Issu</p>
+                <p>Debug suing chrome DevTools,check for overlapping</p>
+                <div class="flex items-center gap-6">
+                    <div>
+                        <p>Deadline</p>
+                        <p>21 March 2025</p>
+                    </div>
+                    <button class="btn btn-primary">Completed</button>
+                </div>
+            </div>
+            <div class="card">
+                <p class="text-sm rounded-sm bg-slate-50">ShopEase</p>
+                <p class="title">Fix Mobile Button Issu</p>
+                <p>Debug suing chrome DevTools,check for overlapping</p>
+                <div class="flex items-center gap-6">
+                    <div>
+                        <p>Deadline</p>
+                        <p>21 March 2025</p>
+                    </div>
+                    <button class="btn btn-primary">Completed</button>
+                </div>
+            </div>
+            <div class="card">
+                <p class="text-sm rounded-sm bg-slate-50">ShopEase</p>
+                <p class="title">Fix Mobile Button Issu</p>
+                <p>Debug suing chrome DevTools,check for overlapping</p>
+                <div class="flex items-center gap-6">
+                    <div>
+                        <p>Deadline</p>
+                        <p>21 March 2025</p>
+                    </div>
+                    <button class="btn btn-primary">Completed</button>
+                </div>
+            </div>
+            <div class="card">
+                <p class="text-sm rounded-sm bg-slate-50">ShopEase</p>
+                <p class="title">Fix Mobile Button Issu</p>
+                <p>Debug suing chrome DevTools,check for overlapping</p>
+                <div class="flex items-center gap-6">
+                    <div>
+                        <p>Deadline</p>
+                        <p>21 March 2025</p>
+                    </div>
+                    <button class="btn btn-primary">Completed</button>
+                </div>
+            </div>
+            <div class="card">
+                <p class="text-sm rounded-sm bg-slate-50">ShopEase</p>
+                <p class="title">Fix Mobile Button Issu</p>
+                <p>Debug suing chrome DevTools,check for overlapping</p>
+                <div class="flex items-center gap-6">
+                    <div>
+                        <p>Deadline</p>
+                        <p>21 March 2025</p>
+                    </div>
+                    <button class="btn btn-primary">Completed</button>
+                </div>
+            </div>
+          </article>
+      </section>
+      <section>
+        <p>activity log</p>
+      </section>
+    </main>
+    <script src="./utilities/utility.js"></script>
   </body>
 </html>
