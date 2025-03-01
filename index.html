@@ -32,8 +32,8 @@
         </div>
       </nav>
     </header>
-    <main class="flex items-baseline">
-      <section>
+    <main class="flex items-baseline justify-evenly my-8 gap-4">
+      <section class="rounded-lg py-2 bg-cyan-50">
         <article class="flex py-4 px-4 gap-6">
             <div id="task-assigned" class="flex gap-2 bg-slate-200 p-8 rounded-2xl shadow-md">
               <img
@@ -133,8 +133,15 @@
             </div>
           </article>
       </section>
-      <section>
-        <p>activity log</p>
+      <section class="rounded-lg py-2 bg-cyan-50 px-4">
+        <div class="flex items-center">
+            <img src="./assets/activity.png" alt="">
+            <p>Activity Log</p>
+        </div>
+        <button id="clear-history" class="btn btn-primary my-4">Clear History</button>
+        <article id="activity-log">
+            
+        </article>
       </section>
     </main>
     <script src="./utilities/utility.js"></script>
