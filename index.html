@@ -46,7 +46,7 @@
                 <p id="num-of-tasks" class="font-bold text-xl">X</p>
               </div>
             </div>
-            <div id="discover" class="flex grow items-center justify-center shadow-md text-white font-semibold gap-5  bg-gradient-to-r from-cyan-500 to-blue-500 rounded-2xl">
+            <div id="discover" class="flex cursor-pointer grow items-center justify-center shadow-md text-white font-semibold gap-5  bg-gradient-to-r from-cyan-500 to-blue-500 rounded-2xl">
               <img src="./assets/board.png" alt="" />
               <p>Discover Something New Today!</p>
             </div>
@@ -134,11 +134,14 @@
           </article>
       </section>
       <section class="rounded-lg py-2 bg-cyan-50 px-4">
-        <div class="flex items-center">
+        <div class="flex items-center justify-center">
             <img src="./assets/activity.png" alt="">
             <p>Activity Log</p>
         </div>
-        <button id="clear-history" class="btn btn-primary my-4">Clear History</button>
+        <div class="flex items-center justify-center">
+            <button id="clear-history" class="btn btn-primary my-4">Clear History</button>
+        </div>
+        
         <article id="activity-log">
             
         </article>
