@@ -2,12 +2,23 @@ const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 const dayName = days[new Date().getDay()];
 // document.getElementById('to-day').innerText = dayName
 
-if(document.getElementById('to-day')){
-    document.getElementById('to-day').innerText = dayName
+function getID(id,inner) {
+    // document.getElementById(id).innerText = inner;
+    if(document.getElementById(id)){
+      return  document.getElementById(id).innerText = inner;
+    }else{
+        return;
+    }
+    
 }
-else{
-    console.log("!!!!")
-}
+
+// if(document.getElementById('to-day')){
+//     document.getElementById('to-day').innerText = dayName
+// }
+// else{
+//     console.log("!!!!")
+// }
+getID('to-day',dayName)
 const today = new Date();
 const formattedDate = today.toLocaleDateString('en-US', {
     month: 'short', day: '2-digit', year: 'numeric'
@@ -16,21 +27,23 @@ const formattedDate = today.toLocaleDateString('en-US', {
 
 // document.getElementById('to-date').innerText = formattedDate;
 
-if(document.getElementById('to-date')){
-    document.getElementById('to-date').innerText = formattedDate;
-}else{
-    console.log("!!!!")
-}
+// if(document.getElementById('to-date')){
+//     document.getElementById('to-date').innerText = formattedDate;
+// }else{
+//     console.log("!!!!")
+// }
+getID('to-date',formattedDate )
 
 let numberOfTasks = document.getElementsByClassName('card').length;
 
 // document.getElementById("num-of-tasks").innerText = numberOfTasks;
 
-if(document.getElementById("num-of-tasks")){
-    document.getElementById("num-of-tasks").innerText = numberOfTasks;
-}else{
-    console.log("!!!!")
-}
+// if(document.getElementById("num-of-tasks")){
+//     document.getElementById("num-of-tasks").innerText = numberOfTasks;
+// }else{
+//     console.log("!!!!")
+// }
+getID('num-of-tasks',numberOfTasks)
 
 // console.log(document.getElementsByClassName('cards'))
 let taskTotallyCompleted;
