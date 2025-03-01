@@ -130,3 +130,14 @@ if(document.getElementById("back-to-desk")){
 }else{
     console.log("!!!!")
 }
+
+
+if(document.getElementById("theme-generate")){
+    document.getElementById("theme-generate").addEventListener("click", function() {
+        // Generate a random hex color
+        let randomColor = "#" + Math.floor(Math.random()*16777215).toString(16).padStart(6, '0');
+        
+        // Dynamically update the body's background color
+        document.getElementById("main-body").style.backgroundColor = randomColor;
+    });
+}
